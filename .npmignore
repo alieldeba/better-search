@@ -1,0 +1,12 @@
+# Exclude configuration and build files
+tsconfig.json
+
+# Exclude test files and directories
+__tests__
+tests
+*.test.ts
+*.spec.ts
+
+# Exclude version control directories
+.git/
+.github/

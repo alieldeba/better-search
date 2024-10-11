@@ -1,0 +1,24 @@
+{
+    "name": "better-search",
+    "version": "1.0.0",
+    "description": "Library for Javascript for better search strings functionality",
+    "main": "./dist/index.js",
+    "scripts": {
+        "test": "node ./__tests__/test.js",
+        "build": "tsc"
+    },
+    "author": "alieldeba",
+    "keywords": [
+        "search",
+        "better",
+        "string",
+        "json",
+        "arabic"
+    ],
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^22.7.5",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.6.3"
+    }
+}
