@@ -1,5 +1,5 @@
 # Better Search
 
 ```bash
-npm install better-search
+npm install @alieldeba/better-search
 ```

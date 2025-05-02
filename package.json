@@ -1,5 +1,5 @@
 {
-    "name": "better-search",
+    "name": "@alieldeba/better-search",
     "version": "1.0.0",
     "description": "Library for Javascript for better search strings functionality",
     "main": "./dist/index.js",

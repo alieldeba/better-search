@@ -1,6 +1,10 @@
 const specialChars = {
     ".": "",
     " ": "",
+    "-": "",
+    "!": "",
+    "؟": "",
+    "?": "",
 };
 
 const arabic = {
@@ -12,12 +16,43 @@ const arabic = {
     ؤ: "ا",
     ط: "ت",
     ى: "ي",
-    ة: "ه",
+    ه: "ة",
+    ة: "ت",
     ذ: "ز",
+};
+
+const diacritics = {
+    "ّ": "",
+    "َ": "",
+    "ً": "",
+    "ُ": "",
+    "ٌ": "",
+    "ِ": "",
+    "ٍ": "",
+    "ْ": "",
 };
 
 const english = {
     e: "i",
+    y: "i",
+    k: "c",
+    ä: "a",
+    ö: "o",
+    ü: "u",
+    ç: "c",
+};
+
+const numbers = {
+    "٠": "0",
+    "١": "1",
+    "٢": "2",
+    "٣": "3",
+    "٤": "4",
+    "٥": "5",
+    "٦": "6",
+    "٧": "7",
+    "٨": "8",
+    "٩": "9",
 };
 
 type ReplacementMap = {
@@ -32,6 +67,8 @@ const replacementMap: ReplacementMap = {
     ...specialChars,
     ...arabic,
     ...english,
+    ...numbers,
+    ...diacritics,
 };
 
 const regexString = Object.keys(replacementMap).join("");
